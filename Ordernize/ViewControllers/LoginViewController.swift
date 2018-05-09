@@ -34,8 +34,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.5) {
             self.view.frame.origin.y = -130
-            //
-            let counter = 0
         }
     }
 
