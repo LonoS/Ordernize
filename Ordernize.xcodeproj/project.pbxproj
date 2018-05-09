@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		98C6272620A39AAB00152496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6272520A39AAB00152496 /* AppDelegate.swift */; };
-		98C6272820A39AAB00152496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6272720A39AAB00152496 /* ViewController.swift */; };
-		98C6272B20A39AAB00152496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C6272920A39AAB00152496 /* Main.storyboard */; };
 		98C6272D20A39AAC00152496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C6272C20A39AAC00152496 /* Assets.xcassets */; };
 		98C6273020A39AAC00152496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */; };
+		98C6274D20A39E1B00152496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C6274C20A39E1B00152496 /* Main.storyboard */; };
+		98C6275120A39E3B00152496 /* RoundedViewWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6274E20A39E3A00152496 /* RoundedViewWithShadow.swift */; };
+		98C6275220A39E3B00152496 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6274F20A39E3A00152496 /* RoundedButton.swift */; };
+		98C6275320A39E3B00152496 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6275020A39E3B00152496 /* ShadowLabel.swift */; };
+		98C6275520A39E6E00152496 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6275420A39E6E00152496 /* LoginViewController.swift */; };
 		E53BCB74DE30E199D723ED1E /* Pods_Ordernize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3427F484698DB749953ED71D /* Pods_Ordernize.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +23,14 @@
 		45283F6222720CA99EB40531 /* Pods-Ordernize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordernize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ordernize/Pods-Ordernize.debug.xcconfig"; sourceTree = "<group>"; };
 		98C6272220A39AAB00152496 /* Ordernize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordernize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C6272520A39AAB00152496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98C6272720A39AAB00152496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98C6272A20A39AAB00152496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98C6272C20A39AAC00152496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C6272F20A39AAC00152496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C6273120A39AAC00152496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C6274C20A39E1B00152496 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		98C6274E20A39E3A00152496 /* RoundedViewWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedViewWithShadow.swift; sourceTree = "<group>"; };
+		98C6274F20A39E3A00152496 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		98C6275020A39E3B00152496 /* ShadowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
+		98C6275420A39E6E00152496 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC9F2FB9F4A2591C25EA790F /* Pods-Ordernize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordernize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ordernize/Pods-Ordernize.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +76,32 @@
 			isa = PBXGroup;
 			children = (
 				98C6272520A39AAB00152496 /* AppDelegate.swift */,
-				98C6272720A39AAB00152496 /* ViewController.swift */,
-				98C6272920A39AAB00152496 /* Main.storyboard */,
+				98C6275720A39F1200152496 /* ViewControllers */,
+				98C6275620A39F0B00152496 /* CustomUI */,
 				98C6272C20A39AAC00152496 /* Assets.xcassets */,
 				98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */,
+				98C6274C20A39E1B00152496 /* Main.storyboard */,
 				98C6273120A39AAC00152496 /* Info.plist */,
 			);
 			path = Ordernize;
+			sourceTree = "<group>";
+		};
+		98C6275620A39F0B00152496 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				98C6274E20A39E3A00152496 /* RoundedViewWithShadow.swift */,
+				98C6274F20A39E3A00152496 /* RoundedButton.swift */,
+				98C6275020A39E3B00152496 /* ShadowLabel.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		98C6275720A39F1200152496 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98C6275420A39E6E00152496 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A96B52A05D1D563C0C195B3D /* Pods */ = {
@@ -149,8 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C6273020A39AAC00152496 /* LaunchScreen.storyboard in Resources */,
+				98C6274D20A39E1B00152496 /* Main.storyboard in Resources */,
 				98C6272D20A39AAC00152496 /* Assets.xcassets in Resources */,
-				98C6272B20A39AAB00152496 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C6272820A39AAB00152496 /* ViewController.swift in Sources */,
+				98C6275120A39E3B00152496 /* RoundedViewWithShadow.swift in Sources */,
+				98C6275220A39E3B00152496 /* RoundedButton.swift in Sources */,
+				98C6275320A39E3B00152496 /* ShadowLabel.swift in Sources */,
+				98C6275520A39E6E00152496 /* LoginViewController.swift in Sources */,
 				98C6272620A39AAB00152496 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,14 +254,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		98C6272920A39AAB00152496 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98C6272A20A39AAB00152496 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +387,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JQL7NUGQB;
 				INFOPLIST_FILE = Ordernize/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lab73.Ordernize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -383,7 +406,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JQL7NUGQB;
 				INFOPLIST_FILE = Ordernize/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lab73.Ordernize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
