@@ -57,7 +57,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 let secondPass = alert.textFields?.first?.text
                 
                 guard let secondPswd = secondPass else {
-                    alert.dismiss(animated: true, completion: nil)
                     return
                 }
                 
@@ -81,7 +80,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             self.present(alert, animated: true, completion: nil)
         } else {
-            
+            // proceed...
         }
         
         
