@@ -15,6 +15,8 @@
 		98C6275220A39E3B00152496 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6274F20A39E3A00152496 /* RoundedButton.swift */; };
 		98C6275320A39E3B00152496 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6275020A39E3B00152496 /* ShadowLabel.swift */; };
 		98C6275520A39E6E00152496 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6275420A39E6E00152496 /* LoginViewController.swift */; };
+		98C6275920A3A73200152496 /* SMSConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6275820A3A73200152496 /* SMSConfirmationViewController.swift */; };
+		98C6275B20A3A9E400152496 /* Synonyms_loose_1.0.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C6275A20A3A9E400152496 /* Synonyms_loose_1.0.png */; };
 		E53BCB74DE30E199D723ED1E /* Pods_Ordernize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3427F484698DB749953ED71D /* Pods_Ordernize.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		98C6274F20A39E3A00152496 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		98C6275020A39E3B00152496 /* ShadowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
 		98C6275420A39E6E00152496 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98C6275820A3A73200152496 /* SMSConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSConfirmationViewController.swift; sourceTree = "<group>"; };
+		98C6275A20A3A9E400152496 /* Synonyms_loose_1.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Synonyms_loose_1.0.png; sourceTree = "<group>"; };
 		FC9F2FB9F4A2591C25EA790F /* Pods-Ordernize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordernize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ordernize/Pods-Ordernize.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,9 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				98C6272520A39AAB00152496 /* AppDelegate.swift */,
-				98C6275720A39F1200152496 /* ViewControllers */,
+				98C6275720A39F1200152496 /* ViewControllers Boarding */,
 				98C6275620A39F0B00152496 /* CustomUI */,
 				98C6272C20A39AAC00152496 /* Assets.xcassets */,
+				98C6275A20A3A9E400152496 /* Synonyms_loose_1.0.png */,
 				98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */,
 				98C6274C20A39E1B00152496 /* Main.storyboard */,
 				98C6273120A39AAC00152496 /* Info.plist */,
@@ -96,12 +101,13 @@
 			path = CustomUI;
 			sourceTree = "<group>";
 		};
-		98C6275720A39F1200152496 /* ViewControllers */ = {
+		98C6275720A39F1200152496 /* ViewControllers Boarding */ = {
 			isa = PBXGroup;
 			children = (
 				98C6275420A39E6E00152496 /* LoginViewController.swift */,
+				98C6275820A3A73200152496 /* SMSConfirmationViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "ViewControllers Boarding";
 			sourceTree = "<group>";
 		};
 		A96B52A05D1D563C0C195B3D /* Pods */ = {
@@ -173,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C6275B20A3A9E400152496 /* Synonyms_loose_1.0.png in Resources */,
 				98C6273020A39AAC00152496 /* LaunchScreen.storyboard in Resources */,
 				98C6274D20A39E1B00152496 /* Main.storyboard in Resources */,
 				98C6272D20A39AAC00152496 /* Assets.xcassets in Resources */,
@@ -246,6 +253,7 @@
 				98C6275120A39E3B00152496 /* RoundedViewWithShadow.swift in Sources */,
 				98C6275220A39E3B00152496 /* RoundedButton.swift in Sources */,
 				98C6275320A39E3B00152496 /* ShadowLabel.swift in Sources */,
+				98C6275920A3A73200152496 /* SMSConfirmationViewController.swift in Sources */,
 				98C6275520A39E6E00152496 /* LoginViewController.swift in Sources */,
 				98C6272620A39AAB00152496 /* AppDelegate.swift in Sources */,
 			);
