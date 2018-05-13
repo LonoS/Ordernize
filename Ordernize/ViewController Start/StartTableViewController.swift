@@ -10,7 +10,9 @@ import UIKit
 
 class StartTableViewController: UITableViewController {
 
-    //var cellHeight = [247,239,327]
+    // var cellHeight = [239, 327]
+    var cellHeight = [327, 239]
+    var cells = ["cell_active", "cell_inactive"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +43,14 @@ class StartTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell.init()
+        let cell = tableView.dequeueReusableCell(withIdentifier: cells[indexPath.row], for: indexPath)
+        
+        return cell
     }
     
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 0
+        return CGFloat(cellHeight[indexPath.row])
     }
 
     /*
