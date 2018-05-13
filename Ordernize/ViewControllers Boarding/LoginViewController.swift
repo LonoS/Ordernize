@@ -16,7 +16,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        redesignTextFields()
+        
         telNumberTF.delegate = self
         pswdTF.delegate = self
         
@@ -105,8 +107,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: 0.5) {
             self.view.frame.origin.y = -130
         }
+        
+        textField.layer.sublayers![0].borderColor = UIColor.orange.cgColor
     }
 
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        textField.layer.sublayers![0].borderColor = UIColor.lightGray.cgColor
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         UIView.animate(withDuration: 0.2) {
@@ -116,5 +123,35 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         pswdTF.resignFirstResponder()
         
         return true
+    }
+    
+    func redesignTextFields(){
+        let border = CALayer()
+        let border2 = CALayer()
+        
+        let width = CGFloat(2.0)
+        
+        
+        
+        border.borderColor = UIColor.lightGray.cgColor
+        border2.borderColor = UIColor.lightGray.cgColor
+        
+        
+        border.frame = CGRect(x: 0, y: telNumberTF.frame.size.height - width, width:  telNumberTF.frame.size.width, height: telNumberTF.frame.size.height)
+        border2.frame = CGRect(x: 0, y: pswdTF.frame.size.height - width, width:  pswdTF.frame.size.width, height: pswdTF.frame.size.height)
+        
+        border.borderWidth = width
+        border2.borderWidth = width
+        
+        telNumberTF.layer.addSublayer(border)
+        pswdTF.layer.addSublayer(border2)
+        
+        
+        telNumberTF.layer.masksToBounds = true
+        pswdTF.layer.masksToBounds = true
+        
+        
+        
+        
     }
 }

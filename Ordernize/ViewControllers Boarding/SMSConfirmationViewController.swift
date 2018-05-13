@@ -45,11 +45,27 @@ class SMSConfirmationViewController: UIViewController, UITextFieldDelegate {
         
         activityIndicator.isHidden = true
         codeTF.delegate = self
-        
+        redesignTextField()
         let taprecognizer = UITapGestureRecognizer.init(target: self, action: #selector(dissmissKeyboard))
         self.view.addGestureRecognizer(taprecognizer)
     }
     
+    func redesignTextField(){
+        let border = CALayer()
+        
+        let width = CGFloat(2.0)
+       
+        border.borderColor = UIColor.lightGray.cgColor
+        
+        border.frame = CGRect(x: 0, y: codeTF.frame.size.height - width, width:  codeTF.frame.size.width, height: codeTF.frame.size.height)
+        
+        border.borderWidth = width
+        
+        codeTF.layer.addSublayer(border)
+    
+        codeTF.layer.masksToBounds = true
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -142,6 +158,10 @@ class SMSConfirmationViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: 0.5) {
             self.view.frame.origin.y = -130
         }
+        textField.layer.sublayers![0].borderColor = UIColor.orange.cgColor
+    }
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        textField.layer.sublayers![0].borderColor = UIColor.lightGray.cgColor
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
