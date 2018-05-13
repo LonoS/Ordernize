@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // check if accountDetails are valid.
         
         
-        // user has to createaccount
+        // user has to createaccount DEMO
         let hasToCreate = true
         
         if hasToCreate {
@@ -96,6 +96,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y = 0
         }
     }
+    
+    
     
     
     // Textfield

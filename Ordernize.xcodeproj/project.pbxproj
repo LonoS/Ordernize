@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98A465CF20A6474C0022F1CC /* StartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465CE20A6474C0022F1CC /* StartTableViewController.swift */; };
+		98A465D120A66D910022F1CC /* InactiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465D020A66D910022F1CC /* InactiveTableViewCell.swift */; };
+		98A465D320A66D990022F1CC /* ActiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465D220A66D990022F1CC /* ActiveTableViewCell.swift */; };
+		98A465D620A66F650022F1CC /* StartCellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465D520A66F650022F1CC /* StartCellManager.swift */; };
+		98A465D820A66F8E0022F1CC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465D720A66F8E0022F1CC /* Colors.swift */; };
+		98A465DA20A671760022F1CC /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A465D920A671760022F1CC /* CellData.swift */; };
 		98C6272620A39AAB00152496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6272520A39AAB00152496 /* AppDelegate.swift */; };
 		98C6272D20A39AAC00152496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C6272C20A39AAC00152496 /* Assets.xcassets */; };
 		98C6273020A39AAC00152496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */; };
@@ -23,6 +29,12 @@
 /* Begin PBXFileReference section */
 		3427F484698DB749953ED71D /* Pods_Ordernize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ordernize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45283F6222720CA99EB40531 /* Pods-Ordernize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordernize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ordernize/Pods-Ordernize.debug.xcconfig"; sourceTree = "<group>"; };
+		98A465CE20A6474C0022F1CC /* StartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTableViewController.swift; sourceTree = "<group>"; };
+		98A465D020A66D910022F1CC /* InactiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveTableViewCell.swift; sourceTree = "<group>"; };
+		98A465D220A66D990022F1CC /* ActiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTableViewCell.swift; sourceTree = "<group>"; };
+		98A465D520A66F650022F1CC /* StartCellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCellManager.swift; sourceTree = "<group>"; };
+		98A465D720A66F8E0022F1CC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		98A465D920A671760022F1CC /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		98C6272220A39AAB00152496 /* Ordernize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordernize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C6272520A39AAB00152496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C6272C20A39AAC00152496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +70,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		98A465D420A66F2D0022F1CC /* ViewController Start */ = {
+			isa = PBXGroup;
+			children = (
+				98A465CE20A6474C0022F1CC /* StartTableViewController.swift */,
+				98A465D020A66D910022F1CC /* InactiveTableViewCell.swift */,
+				98A465D220A66D990022F1CC /* ActiveTableViewCell.swift */,
+				98A465D520A66F650022F1CC /* StartCellManager.swift */,
+				98A465D920A671760022F1CC /* CellData.swift */,
+			);
+			path = "ViewController Start";
+			sourceTree = "<group>";
+		};
 		98C6271920A39AAB00152496 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +103,7 @@
 		98C6272420A39AAB00152496 /* Ordernize */ = {
 			isa = PBXGroup;
 			children = (
+				98A465D420A66F2D0022F1CC /* ViewController Start */,
 				98C6272520A39AAB00152496 /* AppDelegate.swift */,
 				98C6275720A39F1200152496 /* ViewControllers Boarding */,
 				98C6275620A39F0B00152496 /* CustomUI */,
@@ -87,6 +112,7 @@
 				98C6272E20A39AAC00152496 /* LaunchScreen.storyboard */,
 				98C6274C20A39E1B00152496 /* Main.storyboard */,
 				98C6273120A39AAC00152496 /* Info.plist */,
+				98A465D720A66F8E0022F1CC /* Colors.swift */,
 			);
 			path = Ordernize;
 			sourceTree = "<group>";
@@ -251,11 +277,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C6275120A39E3B00152496 /* RoundedViewWithShadow.swift in Sources */,
+				98A465D820A66F8E0022F1CC /* Colors.swift in Sources */,
 				98C6275220A39E3B00152496 /* RoundedButton.swift in Sources */,
 				98C6275320A39E3B00152496 /* ShadowLabel.swift in Sources */,
 				98C6275920A3A73200152496 /* SMSConfirmationViewController.swift in Sources */,
+				98A465D120A66D910022F1CC /* InactiveTableViewCell.swift in Sources */,
 				98C6275520A39E6E00152496 /* LoginViewController.swift in Sources */,
+				98A465D320A66D990022F1CC /* ActiveTableViewCell.swift in Sources */,
+				98A465CF20A6474C0022F1CC /* StartTableViewController.swift in Sources */,
+				98A465D620A66F650022F1CC /* StartCellManager.swift in Sources */,
 				98C6272620A39AAB00152496 /* AppDelegate.swift in Sources */,
+				98A465DA20A671760022F1CC /* CellData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
